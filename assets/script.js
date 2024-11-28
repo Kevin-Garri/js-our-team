@@ -36,3 +36,43 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const TeamContainer = document.getElementById('teamContainer');
+//genero html
+/*const generateTeamCards = (members) => {
+  let teamCard = "";
+  for (let i = 0; i < members.length; i++) {
+    const { name, role, email, img } = members[i];
+    teamCard += `
+      <div class="team-card">
+        <img src="${img}" alt="${name}">
+        <h3>${name}</h3>
+        <p>${role}</p>
+        <a href="mailto:${email}">${email}</a>
+      </div>
+    `;
+  }
+  return teamCard;
+};
+*/
+
+//genero html
+//For of
+const generateTeamCards = (members) => {
+  let teamCard = "";
+  for (let member of members) {
+    const { name, role, email, img } = member;
+    teamCard += `
+      <div class="team-card">
+        <img src="${img}" alt="${name}">
+        <h3>${name}</h3>
+        <p>${role}</p>
+        <a href="mailto:${email}">${email}</a>
+      </div>
+    `;
+  }
+  return teamCard;
+};
+
+// aggiungo card stampando
+document.getElementById("team-container").innerHTML = generateTeamCards(teamMembers);

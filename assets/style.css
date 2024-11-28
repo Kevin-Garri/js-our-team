@@ -6,9 +6,65 @@
 
 body {
   font-family: "fredoka";
+  background-color: rgb(244, 244, 244);
+  color: rgb(51, 51, 51);
+  text-align: center;
 }
 
+h1 {
+  color: rgb(255, 71, 135);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+
+}
+
+p.lorem {
+  color: black;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+
+.team-card img {
+  max-width: 100%;
+}
+
+.team-card div {
+  text-align: left;
+}
+
+.team-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.team-card p {
+  margin: 5px 0;
+  color: rgb(204, 204, 204);
+}
+
+.team-card a {
+  color: rgb(0, 188, 212);
+  font-size: 0.9rem;
+}
+
+/*
 .team-container {
+  display: flex;
   text-align: center;
   padding: 40px;
   display: flex;
@@ -78,3 +134,4 @@ h1 {
 .info p {
   color: white;
 }
+  */
